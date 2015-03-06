@@ -1,0 +1,10 @@
+# Site settings
+title: 52 Experiments
+description: > # this means to ignore newlines until "baseurl:"
+  Musical musings (with rules) from Alan Lindsay
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://52experiments.com" # the base hostname & protocol for your site
+twitter_username: alanlindsay
+
+# Build settings
+markdown: kramdown

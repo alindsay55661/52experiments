@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+
+    <div class='post-navigation'>
+      {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </div>
+
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+
+    {% if page.ingredients %}
+
+    {% include ingredients.html text=page.ingredients %}
+
+    {% endif %}
+
+    {% if page.soundcloudId %}
+
+    {% include soundcloud.html id=page.soundcloudId %}
+
+    {% endif %}
+
+  </header>
+
+  <article class="post-content {% if page.soundcloudId %}soundcloud-feature{% endif %}">
+    {{ content }}
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = '52experiments';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </article>
+
+
+
+</div>
