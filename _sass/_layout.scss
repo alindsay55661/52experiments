@@ -325,7 +325,7 @@
   width: 760px;
   height: 140px;
   left: 50%;
-  top: 104px;
+  top: 94px;
   margin-left: -380px; /*half the width*/
 
 
@@ -335,8 +335,8 @@
     font-size: .6em;
     z-index: 10;
     position: absolute;
-    top: -50px;
-    padding: 10px 0 17px;
+    top: -40px;
+    padding: 10px 0;
     width: 760px;
     background: $background-color;
 
@@ -396,7 +396,7 @@
     vertical-align: middle;
 
     &.soundcloud-feature {
-      margin-top: 245px;
+      margin-top: 215px;
     }
 
     p {
