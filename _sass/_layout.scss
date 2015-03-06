@@ -203,7 +203,18 @@
     font-size: 20px;
 }
 
+.spotlight {
+  width: 240px;
+  margin-right: 20px;
+  float: left;
+}
+
+.spotlight:nth-of-type(3n) {
+  margin-right: 0;
+}
+
 .post-list {
+
     margin-left: 0;
     list-style: none;
 
