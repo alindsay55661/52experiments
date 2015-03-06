@@ -8,7 +8,7 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <a href="{{ site.baseurl }}/{{ post.url }}" style="background: #000 url('{{ site.baseurl }}/img/{{post.img}}'); background-size: contain;">
+      <a href="{{ site.baseurl }}{{ post.url }}" style="background: #000 url('{{ site.baseurl }}/img/{{post.img}}'); background-size: contain;">
       <li>
         <h2>
           <span class="post-link">{{ post.title }}</span>
