@@ -375,6 +375,33 @@
       display: block;
     }
   }
+
+  .social-media-buttons {
+    // border: 1px solid red;
+    width: 150px;
+    height: 100px;
+    margin-left: 65px;
+    text-align: right;
+
+    iframe {
+      text-align: right;
+      float: right !important;
+      margin: 5px !important;
+      max-width: 100px;
+    }
+
+    div {
+      text-align: right;
+      float: right !important;
+      margin: 0 !important;
+
+      iframe {
+        float: none !important;
+        margin-left: 20px;
+      }
+    }
+
+  }
 }
 
 .post-title {
