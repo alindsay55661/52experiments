@@ -27,17 +27,35 @@ layout: default
 <div class="g-plusone" data-size="medium"></div>
 
 </div>
-    {% if page.ingredients %}
-
-    {% include ingredients.html text=page.ingredients %}
-
-    {% endif %}
 
     {% if page.soundcloudId %}
 
     {% include soundcloud.html id=page.soundcloudId %}
 
     {% endif %}
+
+    {% if page.ingredients %}
+
+    {% include ingredients.html text=page.ingredients %}
+
+    {% endif %}
+
+    <div class='post-side-navigation'>
+      {% if page.previous.url %}
+        <div>
+          <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        </div>
+      {% endif %}
+      {% if page.next.url %}
+        <div>
+          <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        </div>
+      {% endif %}
+    </div>
+
+
+
+
 
   </header>
 
