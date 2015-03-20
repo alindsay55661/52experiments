@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Helaman's Army"
-date:   2014-07-01 00:00:00
+date:   2015-03-07 00:00:00
 categories: experiment
 permalink: helamans-army
 soundcloudId: 194487422
